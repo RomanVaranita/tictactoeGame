@@ -7,10 +7,28 @@ public class Main {
 
     public static void main(String[] args) {
         initMap();
+        printMap();
 
     }
 
     public static void printMap(){
+        // 0 1 2 3
+        // 1 * * *
+        // 2 * * *
+        // 3 * * *
+        //
+        for (int i = 0; i <= MAP_SIZE; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        for (int i = 0; i < MAP_SIZE; i++) {
+            System.out.print((i + 1) + " ");
+            for (int j = 0; j < MAP_SIZE; j++) {
+                System.out.print(map[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
 
     }
 
