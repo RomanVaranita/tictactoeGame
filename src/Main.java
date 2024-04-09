@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static Scanner scanner;
+    static Scanner scanner = new Scanner(System.in);
     static char[][] map;
 
     static final int MAP_SIZE = 3;
@@ -11,7 +11,7 @@ public class Main {
     static final char O_FIELD = 'O';
 
     public static void main(String[] args) {
-        initMap();
+        init();
         printMap();
 
     }
@@ -37,7 +37,7 @@ public class Main {
 
     }
 
-    public static void initMap(){
+    public static void init(){
         map = new char[MAP_SIZE][MAP_SIZE];
         for (int i = 0; i < MAP_SIZE; i++) {
             for (int j = 0; j < MAP_SIZE; j++) {
