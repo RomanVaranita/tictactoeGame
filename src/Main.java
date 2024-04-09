@@ -1,9 +1,14 @@
+import java.util.Scanner;
+
 public class Main {
 
+    static Scanner scanner;
     static char[][] map;
 
     static final int MAP_SIZE = 3;
     static final char EMPTY_FIELD = '*';
+    static final char X_FIELD = 'X';
+    static final char O_FIELD = 'O';
 
     public static void main(String[] args) {
         initMap();
