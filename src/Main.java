@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static Scanner scanner = new Scanner(System.in);
+    static Scanner scanner;
     static char[][] map;
 
     static final int MAP_SIZE = 3;
@@ -14,6 +14,13 @@ public class Main {
         init();
         printMap();
 
+    }
+    public static void humanTurn (){
+        System.out.println("Введите координаты вашего хода X Y?");
+        int x,y;
+        x = scanner.nextInt();
+        y = scanner.nextInt();
+        System.out.println("Bu Beli " + x + " " + y);
     }
 
     public static void printMap(){
@@ -44,6 +51,6 @@ public class Main {
                 map[i][j] = EMPTY_FIELD;
             }
         }
-
+       scanner = new Scanner(System.in);
     }
 }
